@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Criando formulário de cadastro">
+    <link rel="icon" href="./src/img/onepiece_icon.jpg">
+    <title>CADASTRAMENTO CONVENIO</title>
 </head>
 <body>
-    
+    <form>
+        <label for="name">NOME</label>
+        <br>
+        <input type="text" placeholder="Digite seu Nome aqui" id="name" name="name" required="true">
+        <br>
+        <label for="e-mail">E-mail</label>
+        <br>
+        <input type="text" name="e-mail" id="e-mail" placeholder="Digite seu e-mail aqui..." required>
+        <br>
+        <label for="password1">Senha</label>
+        <br>
+        <input type="password" placeholder="Digite sua senha aqui" id="password1" name="password1" required>
+        <br>
+        <label for="password2">Senha</label>
+        <br>
+        <input type="password" placeholder="Digite novamente a senha" id="password2" name="password2" required>
+        <br>
+        <label for="desc">Descrição</label>
+        <br>
+        <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+        <br>
+        <label for="plano">Plano</label>
+        <br>
+        <select name="plano" id="plano">
+            <option value="free">Free</option>
+            <option value="basic">Basico</option>
+            <option value="premium">Premium</option>
+            <option value="pro">Pro</option>
+        </select>
+
+        <br>
+        <br>
+        <button type="submit">ENVIAR</button>
+    </form>
+       
 </body>
 </html>
